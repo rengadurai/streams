@@ -16,7 +16,7 @@ public class UseAc {
 		acs.add(new Ac("LG", "White", 1.5f, true, 30000));
 		acs.add(new Ac("Samsung", "Red", 2.0f, true, 32000));
 		acs.add(new Ac("Voltas", "Gray", 2.5f, true, 35000));
-		acs.add(new Ac("WhirlPool", "Orange", 3.0f, true, 45000));
+		acs.add(new Ac("WhirlPool", "Orange", 3.0f, true, 45));
 		
 		List<Ac> highCapacity = acs.stream().filter(x -> x.getCapacity()>1.5f).collect(Collectors.toList());
 		highCapacity.forEach(x->System.out.println(x));
